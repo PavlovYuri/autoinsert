@@ -17,7 +17,7 @@ startBtn.addEventListener("click", () => {
                     for (const {frameId, result} of injectionResults) {
                         request["results"].push(result);
                     }
-                    fetch("http://localhost:7000/", {
+                    fetch("http://localhost:7000/objects", {
                         method: "POST", 
                         headers: {
                             "Content-Type": "application/json;charset=utf-8"
