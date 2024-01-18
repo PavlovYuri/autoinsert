@@ -6,6 +6,6 @@ def get_answer(data):
         text += result["text"]
 
     answer = {
-        "text": text
+        "text": text[:100]
     }
     return answer
